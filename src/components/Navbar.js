@@ -5,7 +5,6 @@ import { GiStairsGoal } from "react-icons/gi";
 import { MdNotificationsNone, MdOutlineAccountCircle } from "react-icons/md";
 
 const Navbar = () => {
-  const [search, setSearch] = useState(false);
   const [input, setInput] = useState("");
 
   return (
@@ -21,6 +20,8 @@ const Navbar = () => {
       </div>
       <div className="flex items-center gap-2 max-[1000px]:hidden">
         <input
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
           type="text"
           className="input input-md text-sm ml-4 placeholder:text-gray-400"
           placeholder="Search..."
