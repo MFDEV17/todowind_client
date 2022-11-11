@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import MenuDrawerProvider from "./components/drawer/MenuDrawerProvider";
+import {BrowserRouter} from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <>
-    <App />
-  </>
+  <BrowserRouter>
+    <MenuDrawerProvider content={<App />} />
+  </BrowserRouter>
 );
