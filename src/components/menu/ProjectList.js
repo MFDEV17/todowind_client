@@ -16,8 +16,10 @@ const ProjectList = ({ list }) => {
             Projects
           </div>
           <div className="btn-group">
-            <div className="btn btn-ghost btn-sm">
-              <AiOutlinePlus />
+            <div className="tooltip" data-tip="Create project">
+              <div className="btn btn-ghost btn-sm">
+                <AiOutlinePlus />
+              </div>
             </div>
             <label className="btn btn-ghost btn-sm swap swap-rotate">
               <input type="checkbox" onClick={() => setShowList(!showList)} />
