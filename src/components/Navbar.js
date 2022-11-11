@@ -6,24 +6,23 @@ import { MdNotificationsNone, MdOutlineAccountCircle } from "react-icons/md";
 
 const Navbar = () => {
   const [input, setInput] = useState("");
-
   return (
     <div className="flex justify-between items-center mt-5 border-b-gray-600 max-w-full px-4 border-b pb-4">
-      <div className="flex gap-6 items-center text-2xl">
+      <div className="flex gap-5 items-center text-2xl">
         <div className="tooltip tooltip-bottom" data-tip="Menu [m]">
-          <div className="btn btn-ghost btn-square">
+          <label className="btn btn-ghost btn-square" htmlFor="my-drawer">
             <HiMenuAlt2 className="h-7 w-7" />
-          </div>
+          </label>
         </div>
         <span className="font-bold max-[500px]:hidden">Todowind</span>{" "}
-        <span className="text-sm underline max-[600px]:hidden">v1.0.4</span>
+        <span className="text-sm underline max-[600px]:hidden">v 1.0.4</span>
       </div>
       <div className="flex items-center gap-2 max-[1000px]:hidden">
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
           type="text"
-          className="input input-md text-sm ml-4 placeholder:text-gray-400"
+          className="input input-md text-md ml-4 placeholder:text-gray-400"
           placeholder="Search..."
         />
         <div className="flex items-center gap-1">
