@@ -9,7 +9,7 @@ const FavoriteList = ({list}) => {
 
   return (
     <>
-      <li className="mt-10 px-3 bg-gray-800 p-4 rounded-xl">
+      <li className="mt-10 px-3 bg-gray-800 p-4 rounded-xl sticky top-0.5">
         <div className="text-lg flex items-center justify-between">
           <div className="flex items-center gap-3 pl-2">
             <MdOutlineFavoriteBorder className="h-6 w-6" />
@@ -22,7 +22,7 @@ const FavoriteList = ({list}) => {
           </label>
         </div>
       </li>
-      <ul className={`pt-5 w-full ${!showList && "hidden"}`}>
+      <ul className={`pt-5 w-full ${!showList && "hidden"} max-h-[90vh]`}>
         {list.map((i, index) => (
           <li
             key={index}

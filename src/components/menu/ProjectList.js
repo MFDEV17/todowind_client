@@ -9,7 +9,7 @@ const ProjectList = ({ list }) => {
 
   return (
     <>
-      <li className="mt-10 px-3 bg-gray-800 p-4 rounded-xl">
+      <li className="mt-10 px-3 bg-gray-800 p-4 rounded-xl sticky top-1">
         <div className="text-lg flex items-center justify-between">
           <div className="flex items-center gap-3 pl-2">
             <TbListDetails className="h-6 w-6" />
