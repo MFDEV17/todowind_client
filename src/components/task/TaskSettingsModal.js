@@ -22,11 +22,9 @@ const TaskSettingsModal = ({ id, isDone, taskTitle }) => {
     tagsBtn: false
   });
 
-
   return (
     <>
       <input
-        checked={isDone}
         type="checkbox"
         id={`settings-modal-${id}`}
         className="modal-toggle"
@@ -60,7 +58,7 @@ const TaskSettingsModal = ({ id, isDone, taskTitle }) => {
             {/* modal left side */}
             <div className="flex flex-col grow-[2] max-w-[540px]">
               <div className="flex gap-4">
-                <input type="checkbox" className="checkbox" />
+                <input type="checkbox" className="checkbox" checked={isDone}/>
                 <p className="font-bold">{taskTitle}</p>
               </div>
               <div className="flex flex-col gap-2 pl-7 mt-5 pb-4">
