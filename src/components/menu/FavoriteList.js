@@ -9,16 +9,16 @@ const FavoriteList = ({list}) => {
 
   return (
     <>
-      <li className="mt-10 px-3">
+      <li className="mt-10 px-3 bg-gray-800 p-4 rounded-xl">
         <div className="text-lg flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <MdOutlineFavoriteBorder className="h-6 w-6"/>
+          <div className="flex items-center gap-3 pl-2">
+            <MdOutlineFavoriteBorder className="h-6 w-6" />
             Favorite
           </div>
           <label className="btn btn-ghost btn-sm swap swap-rotate">
-            <input type="checkbox" onClick={() => setShowList(!showList)}/>
-            <AiOutlineDown className="swap-on"/>
-            <AiOutlineLeft className="swap-off"/>
+            <input type="checkbox" onClick={() => setShowList(!showList)} />
+            <AiOutlineDown className="swap-on" />
+            <AiOutlineLeft className="swap-off" />
           </label>
         </div>
       </li>
@@ -29,11 +29,11 @@ const FavoriteList = ({list}) => {
             className="flex items-center justify-between px-4 hover:bg-gray-800 duration-200 rounded-xl p-3 hover:cursor-pointer"
           >
             <div className="flex gap-3 items-center">
-              <GoPrimitiveDot className="h-6 w-6"/>
+              <GoPrimitiveDot className="h-6 w-6" />
               <p>Java</p>
             </div>
             <div className="btn btn-ghost btn-sm no-animation">
-              <HiOutlineDotsHorizontal className={`h-5 w-5`}/>
+              <HiOutlineDotsHorizontal className={`h-5 w-5`} />
             </div>
           </li>
         ))}
