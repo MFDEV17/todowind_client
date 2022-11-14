@@ -7,8 +7,8 @@ import FavoriteList from "./FavoriteList";
 const Menu = () => {
   return (
     <div className="drawer-side">
-      <label htmlFor="my-drawer" className="drawer-overlay" />
-      <ul className="px-2 w-80 bg-base-100 text-base-content py-10">
+      <label htmlFor="menu-drawer" className="drawer-overlay" />
+      <ul className="px-5 w-80 bg-base-100 text-base-content py-10">
         <li className="hidden max-[1000px]:block">
           <input
             type="text"
